@@ -23,6 +23,8 @@ body {
   
   .description{
     white-space: pre-wrap;
+    border-top: 1px dashed lightgray;
+    border-bottom: 1px dashed lightgray;
   }
   
   .time-block{
@@ -37,9 +39,9 @@ body {
   }
   
   .hour {
-    background-color: #ffffff;
+    background-color: lightblue;
     color: #000000;
-    border-top: 1px dashed #000000;
+    border: 1px solid #000000;
   }
   
   .past {
