@@ -6,8 +6,9 @@ $(".saveBtn").on("click", function() {
 
     var message = $(this).siblings(".description").val();
     var time = $(this).parent(".description").val();
-    
-    localStorage,setItem(time, message)
+    console.log(message);
+
+    localStorage.setItem("value", message);
     
 });
 
@@ -37,5 +38,5 @@ var interval = setInterval(hourUpdater, 15000)
 
 //local storage
 for(let i = 9; i < 18; i++){
-    $("#hour-9 .description").val(localStorage.getItem("hour-9"));
-}
+$("#hour-9 .description").val(localStorage.getItem("hour-9"));
+};
